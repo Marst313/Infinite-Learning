@@ -1,0 +1,241 @@
+@import 'utilities.css';
+
+:root {
+  --primary: #3dcfd3;
+  --dark: #161616;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #dfdede;
+  --secondary: #070606;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smootthing: antialiased;
+}
+header {
+  background: var(--dark);
+  /* height: 800px; */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 88%, 0 100%);
+}
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+header nav .left a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+header nav {
+  padding: 2rem 0;
+}
+header nav .branding {
+  margin-right: 3rem;
+}
+header nav .branding h1 {
+  color: var(--primary);
+  font-size: 30px;
+}
+.hero {
+  padding: 3rem 0;
+}
+.hero .left img {
+  width: 400px;
+}
+.hero .right {
+  color: var(--pure);
+}
+.hero .right h6 {
+  color: var(--primary);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.hero .right h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.hero .right h1 span {
+  color: var(--primary);
+}
+.hero .right p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+.hero .right {
+  margin-top: -7rem;
+}
+section {
+  margin: 6rem 0;
+}
+section.about .about-me-img {
+  height: 450px;
+}
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+section.about h1 span {
+  color: var(--primary);
+}
+section.about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+section.about p {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+section.about .social {
+  display: flex;
+}
+section.about .social a {
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+
+  margin-right: 0.6rem;
+  transition: all 0.4s ease;
+}
+section.about .social a:hover {
+  background: var(--primary);
+}
+
+.services .container {
+  margin-top: 4rem;
+  display: grid;
+  align-content: center;
+}
+.section-heading {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  line-height: 0.5;
+}
+.section-heading span {
+  color: var(--primary);
+}
+.section-heading + p {
+  color: var(--ternary);
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 8rem;
+}
+section.services {
+  background: var(--light);
+}
+/* section .container .card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+} */
+.card {
+  margin-bottom: 3.5rem;
+  list-style-type: none;
+}
+
+section .services .card-wrapper {
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 6rem;
+}
+section.services .card-wrapper .card {
+  background: var(--pure);
+  padding: 3rem 2rem;
+  position: relative;
+  padding-top: 6rem;
+  text-align: center;
+  transition: all 0.6s ease;
+  margin-bottom: 5rem;
+}
+section.services .card-wrapper .card img {
+  position: absolute;
+  top: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  background-color: var(--primary);
+}
+section.services .card-wrapper .card h2 {
+  margin-bottom: 0.6rem;
+  color: var(--dark);
+}
+section.services .card-wrapper .card p {
+  color: var(--ternary);
+}
+section.services .card-wrapper .card:hover {
+  background: var(--dark);
+  /* transition: all .6s ease; */
+}
+section.services .card-wrapper .card:hover h2,
+section.services .card-wrapper .card:hover p {
+  color: var(--pure);
+}
+
+footer {
+  background-color: var(--ternary);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 88%, 0 100%);
+  /* opacity: 0.3; */
+}
+footer h1 {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+footer h1 span {
+  color: var(--primary);
+}
+.specific {
+  padding-bottom: 5rem;
+  justify-items: center;
+}
+.specific h2 {
+  text-shadow: 0px 2px 0px black;
+}
+.specific ul {
+  list-style: none;
+  margin: 0 auto;
+}
+.specific ul li {
+  margin: 0 auto;
+  text-align: start;
+  color: var(--pure);
+}
+.specific ul li a {
+  margin: 0.5rem 0;
+  color: var(--pure);
+  text-decoration: none;
+}
+.specific ul li a:hover {
+  cursor: pointer;
+  color: var(--primary);
+  transition: all 0.6s ease;
+  text-decoration: underline;
+}
