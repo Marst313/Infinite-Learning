@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Javascript</title>
+  </head>
+  <style>
+    .while {
+      display: flex;
+      gap: 1rem;
+    }
+    .hasil {
+      overflow: auto;
+      height: 200px;
+      box-shadow: 1px 1px 5px black;
+      padding-right: 2.5rem;
+      padding-left: 2.5rem;
+    }
+  </style>
+  <body>
+    <main>
+      <h1>Tugas Javascript</h1>
+
+      <h2>I Nyoman Karma Dharma Nalendra Wardana</h2>
+
+      <ol>
+        <li>
+          <h4>Function</h4>
+          <input type="color" name="color" id="color" />
+        </li>
+
+        <li>
+          <h4>While do, do while</h4>
+
+          <div class="while">
+            <button class="minus">-</button>
+            <span>1</span>
+            <button class="plus">+</button>
+          </div>
+        </li>
+
+        <li>
+          <h4>For Statement</h4>
+          <div>
+            <label for="forStatement">Jumlah perulangan</label>
+            <input type="number" id="forStatement" placeholder="5" />
+          </div>
+          <button class="forStatement">Klik disini !</button>
+          <div class="hasil"></div>
+        </li>
+
+        <li>
+          <h4>Switch Case</h4>
+          <label for="pilihan">Pilih Makanan:</label>
+          <select id="pilihan" onchange="ubahOutput()">
+            <option value="opsi1">Tempe</option>
+            <option value="opsi2">Rendang</option>
+            <option value="opsi3">Nasi Goreng</option>
+          </select>
+          <p>Hasil: <span id="output">Pilih opsi di atas</span></p>
+        </li>
+
+        <li>
+          <h4>If,Else,Nested If</h4>
+
+          <h3 id="hasilUmur">Hasil</h3>
+          <button onclick="cekUmur()">Cek Umur</button>
+        </li>
+      </ol>
+    </main>
+  </body>
+
+  <script src="index.js"></script>
+</html>
